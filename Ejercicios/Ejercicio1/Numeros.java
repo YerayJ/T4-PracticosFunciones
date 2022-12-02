@@ -1,3 +1,5 @@
+package Ejercicio1;
+
 public class Numeros {
 
     // Precondición num > 0
