@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        // Creamos escaner para leer datos
+        // Creamos escáner para leer datos
         Scanner key = new Scanner(System.in);
 
         // Creamos un objeto para llamar a los objetos de la clase Operaciones
@@ -17,7 +17,13 @@ public class Main {
 
         // Imprimimos el resultado de las funciones llamadas
         System.out.println("-------------MENÚ-------------");
-        System.out.printf("");
+        System.out.println("El resultado de la suma es: " + operaciones.suma());
+        System.out.println("El resultado de la resta es: " + operaciones.resta());
+        System.out.println("El resultado de la multiplicación es: " + operaciones.multiplicacion());
+        System.out.println("El resultado de la división es: " + operaciones.division());
+
+        // Cerramos el escáner
+        key.close();
 
     }
 }
