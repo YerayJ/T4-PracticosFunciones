@@ -23,8 +23,14 @@ public class Operaciones {
     }
 
     int division() {
-        // Devolvemos un resultado haciendo la operación directamente
-        return num1 / num2;
+        // Creamos un resultado de tipo int
+        int res = 0;
+        // Devolvemos un resultado haciendo la operación directamente,
+        // teniendo en cuenta que el segundo divisor no sea 0
+        if (num2 != 0) {
+            res = num1 / num2;
+        }
+        return res;
     }
 
 }

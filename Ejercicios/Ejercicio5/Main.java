@@ -10,20 +10,33 @@ public class Main {
         int n;
         // Creamos la variable a de tipo double para la función potencia
         double a;
-
+        // Creamos la variable nfibonacci
+        int nfibonacci;
         // Creamos escáner para leer datos
         Scanner key = new Scanner(System.in);
 
-        // Pedimos datos al usuario
+        // Pedimos variable num al usuario
         System.out.println("Deme un número: ");
         num = key.nextInt();
+        // Llamamos a la función sumatorio
+        System.out.println("El resultado del sumatorio es: " + FuncionesRecursivas.sumatorio(num));
+
+        // Pedimos variable a y n al usuario
         System.out.println("Deme un número decimal: ");
         a = key.nextDouble();
         System.out.println("Deme un número para elevar a la potencia: ");
         n = key.nextInt();
+        // Llamamos a la función potencia
+        System.out.println("El resultado del número exponente es: " + FuncionesRecursivas.potencia(a,n));
 
-        // Llamamos a las funciones
-        System.out.println(FuncionesRecursivas.sumatorio(num));
-        System.out.println(FuncionesRecursivas.potencia(a,n));
+        //Pedimos la posición
+        System.out.println("Deme un número para calcular fibonacci: ");
+        nfibonacci = key.nextInt();
+
+        // Llamamos a la función
+        System.out.println("El resultado es: " + FuncionesRecursivas.fibonacci(nfibonacci));
+
+        // Cerramos el escáner
+        key.close();
     }
 }
